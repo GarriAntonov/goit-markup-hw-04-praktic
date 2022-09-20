@@ -133,9 +133,9 @@ img {
   background-image: url(../images/Img\ -bgp.jpg);
   background-color: var(--img-overlay);
   background-repeat: no-repeat;
-  width: 1600px;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -148,7 +148,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-main);
-  margin-top: 200px;
+  margin-top: 106px;
   margin-bottom: 30px;
   width: 696px;
   height: 120px;
@@ -165,7 +165,7 @@ img {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 200px;
+  margin-bottom: 106px;
   letter-spacing: 0.06em;
   color: var(--background-main);
   background-color: var(--color-three);
