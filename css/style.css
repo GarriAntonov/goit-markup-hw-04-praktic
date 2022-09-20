@@ -10,6 +10,7 @@
   --color-b-line-work: #eeeeee;
   --background-main: #ffffff;
   --background-black: #2f303a;
+  --img-overlay: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -52,7 +53,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .header .container {
@@ -129,7 +130,16 @@ img {
 }
 
 .hero {
-  background-color: var(--background-black);
+  background-color: var(--img-overlay)
+    linear-gradient(to right, var(--img-overlay) 50%, var(--img-overlay) 50%);
+  background-image: url(../images/Img\ -bgp.jpg);
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero-title {
@@ -224,6 +234,9 @@ img {
 
 .team-list li {
   background-color: var(--background-main);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list img {
@@ -313,6 +326,12 @@ img {
   padding-left: 0;
 }
 
+.works-item:hover,
+.works-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .works-title {
   display: none;
 }
@@ -346,6 +365,11 @@ img {
 .works-list > li {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid var(--color-bline-header);
+}
+
+.works-list > li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works-list div {
