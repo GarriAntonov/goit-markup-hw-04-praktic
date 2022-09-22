@@ -11,6 +11,7 @@
   --background-main: #ffffff;
   --background-black: #2f303a;
   --img-overlay: rgba(47, 48, 58, 0.4);
+  --color-fill-icon-clients: #afb1b8;
 }
 
 body {
@@ -332,6 +333,40 @@ img {
   fill: var(--background-main);
 }
 
+.clients-tytle {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-two);
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+  fill: var(--main-color);
+  padding-left: 0;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-fill-icon-clients);
+  border-radius: 4px;
+  fill: var(--color-fill-icon-clients);
+  cursor: pointer;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--color-three);
+  border-color: var(--color-three);
+}
+
 .footer {
   background-color: var(--background-black);
 }
@@ -373,6 +408,19 @@ img {
   background-color: var(--background-black);
   margin-bottom: 9px;
   margin-left: 0;
+}
+
+.call-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-main);
+}
+
+.call {
+  display: flex;
 }
 
 /* second page */
