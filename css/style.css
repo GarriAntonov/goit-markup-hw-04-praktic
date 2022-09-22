@@ -6,7 +6,7 @@
   --color-two: #212121;
   --color-three: #2196f3;
   --color-four: #f5f4fa;
-  --color-bline-header: #ececec;
+  --color-fill-social-link: #afb1b8;
   --color-b-line-work: #eeeeee;
   --background-main: #ffffff;
   --background-black: #2f303a;
@@ -119,7 +119,7 @@ img {
 }
 
 .phone {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 .mail:hover,
@@ -127,6 +127,31 @@ img {
 .mail:focus,
 .phone:focus {
   color: var(--color-three);
+}
+
+.mail-link {
+  display: flex;
+  margin-left: 318px;
+  align-items: center;
+  fill: var(--main-color);
+}
+
+.phone-link {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  fill: var(--main-color);
+}
+
+.mail-link:hover,
+.mail-link:focus,
+.phone-link:hover,
+.phone-link:focus {
+  fill: var(--color-three);
+}
+
+.mail-icon {
+  margin-right: 10px;
 }
 
 .hero {
@@ -188,6 +213,19 @@ img {
   outline: 1px solid red;
 }
 
+.benefits-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--color-four);
+
+  fill: var(--color-two);
+}
+
 .benefits {
   display: none;
 }
@@ -230,7 +268,7 @@ img {
   background-color: var(--color-four);
 }
 
-.team-list li {
+.team-item {
   background-color: var(--background-main);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -265,6 +303,33 @@ img {
   text-align: center;
   color: var(--main-color);
   margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+  margin-bottom: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
+  justify-content: center;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--color-fill-social-link);
+  cursor: pointer;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--color-three);
+  fill: var(--background-main);
 }
 
 .footer {
