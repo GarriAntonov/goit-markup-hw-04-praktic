@@ -7,7 +7,7 @@
   --color-three: #2196f3;
   --color-four: #f5f4fa;
   --color-fill-social-link: #afb1b8;
-  --color-b-line-work: #eeeeee;
+  --color-footer-soc-bg: rgba(255, 255, 255, 0.1);
   --background-main: #ffffff;
   --background-black: #2f303a;
   --img-overlay: rgba(47, 48, 58, 0.4);
@@ -24,7 +24,6 @@ body {
 }
 
 body ul {
-  background-color: var(--background-main);
   list-style: none;
 }
 
@@ -35,9 +34,10 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul a {
   margin-top: 0;
   margin-bottom: 0;
+  text-decoration: none;
 }
 
 img {
@@ -97,7 +97,6 @@ img {
   line-height: 1.2px;
   letter-spacing: 0.02em;
   color: var(--color-two);
-  text-decoration: none;
 }
 
 .header-list .current {
@@ -367,62 +366,102 @@ img {
   border-color: var(--color-three);
 }
 
+.socials-list {
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+}
+
+.socials-list li {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-footer-soc-bg);
+}
+
 .footer {
   background-color: var(--background-black);
 }
 
-.footer-list {
+.footer .container {
+  padding: 60px 15px;
+}
+
+.footer-items {
+  display: flex;
+}
+
+.footer .list {
+  flex-direction: column;
   background-color: var(--background-black);
   padding-left: 0;
 }
 
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer .list li {
+  margin-bottom: 9px;
+  /* text-decoration: none; */
+}
+
+.footer .list li:last-child {
+  margin-bottom: 0;
 }
 
 .footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--background-main);
+  text-decoration: none;
 }
 
-.footer-dot {
-  color: var(--background-main);
+.footer-adress {
   font-style: normal;
-  margin-bottom: 9px;
+  line-height: 1.7;
+  color: var(--background-main);
 }
 
-.footer .mail,
-.footer .phone {
-  color: var(--color-one);
-}
-
-.footer .mail:hover,
-.footer .phone:hover,
-.footer .mail:focus,
-.footer .phone:focus {
+.footer-adress:hover,
+.footer-adress:focus {
   color: var(--color-three);
 }
 
-.footer-list .mail,
-.footer-list .phone {
-  background-color: var(--background-black);
-  margin-bottom: 9px;
-  margin-left: 0;
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.call-title {
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--color-three);
+}
+
+.contaks {
+  margin-right: 70px;
+}
+
+.header-socials-link {
+  margin: 10px 0 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-main);
 }
 
-.call {
-  display: flex;
+.social-items:hover,
+.social-items:focus {
+  background-color: var(--color-three);
 }
 
+.socials-icon-footer {
+  fill: var(--background-main);
+}
 /* second page */
 
 .works {
