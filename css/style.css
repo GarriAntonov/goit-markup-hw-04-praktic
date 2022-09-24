@@ -34,7 +34,8 @@ h4,
 h5,
 h6,
 p,
-ul a {
+ul,
+a {
   margin-top: 0;
   margin-bottom: 0;
   text-decoration: none;
@@ -372,16 +373,6 @@ img {
   padding-left: 0;
 }
 
-.socials-list li {
-  display: inline-flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-footer-soc-bg);
-}
-
 .footer {
   background-color: var(--background-black);
 }
@@ -454,8 +445,18 @@ img {
   color: var(--background-main);
 }
 
-.social-items:hover,
-.social-items:focus {
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-footer-soc-bg);
+}
+
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--color-three);
 }
 
