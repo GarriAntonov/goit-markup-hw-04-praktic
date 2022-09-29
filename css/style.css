@@ -222,7 +222,7 @@ img {
   margin-bottom: 30px;
   background-color: var(--color-four);
 
-  fill: var(--color-two);
+  /* fill: var(--color-two); */
 }
 
 .benefits {
