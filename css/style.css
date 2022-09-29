@@ -59,8 +59,9 @@ img {
 .header .container {
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-list {
@@ -150,16 +151,21 @@ img {
 }
 
 .hero {
-  background-image: url(../images/img-bgp.jpg);
+  background-image: linear-gradient(to right, var(--img-overlay) 50%, var(--img-overlay) 50%),
+    url(../images/img-bgp.jpg);
+  background-color: var(--main-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
-  border-top: 1px solid #ececec;
+}
+
+.hero-div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
 }
 
 .hero-title {
@@ -174,12 +180,11 @@ img {
   height: 120px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+  /* padding-top: 200px; */
 }
 
 .hero-button {
   margin: 30px auto 200px;
-  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -202,7 +207,8 @@ img {
   justify-content: space-between;
   gap: 30px;
   padding-left: 0;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   /* outline: 1px solid red; */
 }
 
@@ -224,6 +230,7 @@ img {
 }
 
 .benefits-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -239,7 +246,8 @@ img {
   display: flex;
   gap: 30px;
   padding-left: 0;
-  margin-bottom: 94px;
+
+  padding-bottom: 94px;
 }
 
 .our-activities-title {
@@ -329,7 +337,7 @@ img {
 }
 
 .clients-tytle {
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -343,7 +351,7 @@ img {
   gap: 30px;
   fill: var(--main-color);
   padding-left: 0;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-item {
@@ -514,7 +522,7 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .works-list > li {
