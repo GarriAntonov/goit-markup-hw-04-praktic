@@ -151,7 +151,6 @@ img {
 
 .hero {
   background-image: url(../images/img-bgp.jpg);
-  /* background-color: linear-gradient(right, var(--img-overlay) 50%, var(--img-overlay) 50%); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
