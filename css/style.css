@@ -327,12 +327,6 @@ img {
   cursor: pointer;
 }
 
-.social-item:hover,
-.social-item:focus {
-  background-color: var(--color-three);
-  fill: var(--background-main);
-}
-
 .clients-tytle {
   margin-bottom: 50px;
   font-weight: 700;
@@ -457,6 +451,7 @@ img {
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--color-three);
+  fill: var(--background-main);
 }
 
 .socials-icon-footer {
