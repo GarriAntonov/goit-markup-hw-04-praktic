@@ -12,6 +12,7 @@
   --background-black: #2f303a;
   --img-overlay: rgba(47, 48, 58, 0.4);
   --color-fill-icon-clients: #afb1b8;
+  --border-color-work-list: #eeeeee;
 }
 
 body {
@@ -56,12 +57,15 @@ img {
   /* outline: 1px solid red; */
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .header-list {
@@ -274,6 +278,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .team-list img {
@@ -310,16 +315,11 @@ img {
   display: flex;
   gap: 10px;
   padding-left: 0;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
   justify-content: center;
 }
 
 .social-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -361,8 +361,8 @@ img {
   cursor: pointer;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.client-link:hover,
+.client-link:focus {
   fill: var(--color-three);
   border-color: var(--color-three);
 }
@@ -375,15 +375,13 @@ img {
 
 .footer {
   background-color: var(--background-black);
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-items {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .list {
@@ -516,7 +514,7 @@ img {
 
 .works-list > li {
   flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid var(--color-bline-header);
+  border: 1px solid var(--border-color-work-list);
 }
 
 .works-list > li:hover {
